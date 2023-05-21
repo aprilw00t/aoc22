@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.stream.Stream;
 
 public class DayOne {
-    public ArrayList<Integer> splitList(String input) {
+    public ArrayList<Integer> splitList() {
         String fileName = "C:\\Users\\April\\IdeaProjects\\AOC2022\\src\\main\\resources\\dayOneinput.txt";
         int total = 0;
         ArrayList<Integer> Totals = new ArrayList<>();
