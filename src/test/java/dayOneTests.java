@@ -1,8 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-
 public class dayOneTests {
     @Test
     public void convertsToArrays() {
@@ -12,8 +10,8 @@ public class dayOneTests {
 
     @Test
     public void getsLastThree() {
-DayTwo dayTwo = new DayTwo();
-Assertions.assertEquals(206104, dayTwo.lastThree());
+DayOnePtTwo dayOnePtTwo = new DayOnePtTwo();
+Assertions.assertEquals(206104, dayOnePtTwo.lastThree());
 ;
     }
 }
