@@ -10,15 +10,20 @@ import java.util.stream.Stream;
 public class DayTwo {
     Integer score = 0;
     int addsScore(String opponent, String own){
-        if(Objects.equals(own, "X")){score = score + 1;}
-        if(Objects.equals(own, "Y")){score = score + 2;}
-        if(Objects.equals(own, "Z")){score = score + 3;}
-        if(Objects.equals(opponent, "A") && Objects.equals(own, "Y")){score = score + 6;}
-        if(Objects.equals(opponent, "B") && Objects.equals(own, "Z")){score = score + 6;}
-        if(Objects.equals(opponent, "C") && Objects.equals(own, "X")){score = score + 6;}
-        if(Objects.equals(opponent, "A") && Objects.equals(own, "X")){score = score + 3;}
-        if(Objects.equals(opponent, "B") && Objects.equals(own, "Y")){score = score + 3;}
-        if(Objects.equals(opponent, "C") && Objects.equals(own, "Z")){score = score + 3;}
+        if(Objects.equals(own, "X")){
+            if(Objects.equals(opponent, "A")){score = score + 3;}
+            if(Objects.equals(opponent, "B")){score = score + 1;}
+            if(Objects.equals(opponent, "C")){score = score + 2;}
+        }
+        if(Objects.equals(own, "Y")){score = score + 3;
+            if(Objects.equals(opponent, "A")){score = score + 1;}
+            if(Objects.equals(opponent, "B")){score = score + 2;}
+            if(Objects.equals(opponent, "C")){score = score + 3;}}
+        if(Objects.equals(own, "Z")){score = score + 6;
+            if(Objects.equals(opponent, "A")){score = score + 2;}
+            if(Objects.equals(opponent, "B")){score = score + 3;}
+            if(Objects.equals(opponent, "C")){score = score + 1;}}
+
 
         return score;}
 
